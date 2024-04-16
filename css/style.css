@@ -165,7 +165,7 @@ body{
     position: fixed;
     width: 100%;
     height: 60vh;
-    background-color: #ffffff99;
+    background-color: #ffffffe3;
     
 }
 .menudiv.hidden{
@@ -249,7 +249,20 @@ body{
     background-size: cover;
     background-position: center;
 }
-
+#timesheetsec1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/Timesheetbg.png);
+    background-size: cover;
+    background-position: center;
+}
+#Indoorsec1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/IndoorNaviBg.png);
+    background-size: cover;
+    background-position: center;
+}
 .cbdtsec{
     display: flex;
     flex-direction: column;
@@ -275,7 +288,56 @@ body{
     flex-direction: column;
     background-color: white;
 }
-
+.timesheetsec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timesheet .container.blue{
+    width: calc(64%);
+    display: flex;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    background-color: #E2FEEF;
+}
+.timesheet .container.white{
+    width: calc(64%);
+    display: flex;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    background-color: white;
+}
+.IndoorNavi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.IndoorNavi .container.blue{
+    width: calc(64%);
+    display: flex;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    background-color: #F5FEE2;
+}
+.IndoorNavi .container.white{
+    width: calc(64%);
+    display: flex;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    background-color: white;
+}
 .heading{
     font-family: "Inter";
     font-weight: 700;
@@ -300,9 +362,53 @@ body{
     left: 0;
     margin-top: 40px;
 }
+.indoormobileview{
+    background: url(../image/IndoorNaviWireframe.png);
+    background-size: contain;
+    width: calc(100vw);
+    background-repeat: no-repeat;
+    height: 700px;
+    margin-left: -30%;
+    position: relative;
+    left: 0;
+    margin-top: 40px;
+}
+.indoormobileview1{
+    background: url(../image/IndoorNaviWireframeHigh.png);
+    background-size:contain;
+    width: calc(100vw);
+    background-repeat: no-repeat;
+    height: 700px;
+    margin-left: -30%;
+    position: relative;
+    left: 0;
+    margin-top: 40px;
+}
 .highendprotobg{
     background: url(../image/Highend.png);
     background-size: auto;
+    background-repeat: no-repeat;
+    width: calc(100vw);
+    height: 450px;
+    margin-left: -30%;
+    position: relative;
+    left: 0;
+    margin-top: 40px;
+}
+.highendprototimesheetbg{
+    background: url(../image/WireframesTimesheetHigh.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: calc(100vw);
+    height: 450px;
+    margin-left: -30%;
+    position: relative;
+    left: 0;
+    margin-top: 40px;
+}
+.uiscreenstimesheet{
+    background: url(../image/UIscreenstimesheet.png);
+    background-size: cover;
     background-repeat: no-repeat;
     width: calc(100vw);
     height: 450px;
