@@ -19,3 +19,23 @@ function changeText() {
 }
 
 setInterval(changeText, 3000);
+$(document).ready(function() {
+    if(!window.location.pathname.includes("index.html") && window.location.pathname != "/" ){
+        $('#myElement').addClass("visiblescrollele");
+    }
+    $(document).on('scroll', function() {
+        var $element = $('#myElement');
+        var elementTop = $element.offset().top;
+        var viewportHeight = $(window).height();
+        var scrollTop = $(this).scrollTop();
+        var pathval = window.location.pathname;
+        if(pathval.includes("index.html") || pathval == "/"){
+            if(scrollTop > $("section").eq(0).height()){
+                $element.addClass("visiblescrollele");
+            }
+            else{
+                $element.removeClass("visiblescrollele");
+            }
+        }
+    });
+});
