@@ -517,9 +517,17 @@ body{
     margin-right: 10px;
 }
 #myElement {
-    position: sticky;
+    /* position: sticky; */
+    position: absolute;
     top: 0;
     display: none;
+ }
+ .sticky{
+    position: sticky!important;
+ }
+ .cont-name-scroll a{
+    text-decoration: none;
+    color: black;
  }
  .visiblescrollele{
     display: flex!important;

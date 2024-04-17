@@ -32,10 +32,17 @@ $(document).ready(function() {
         if(pathval.includes("index.html") || pathval == "/"){
             if(scrollTop > $("section").eq(0).height()){
                 $element.addClass("visiblescrollele");
+                $element.addClass("sticky");
             }
             else{
                 $element.removeClass("visiblescrollele");
             }
+        }
+        else if(scrollTop !=0){
+            $element.addClass("sticky");
+        }
+        else if(scrollTop ==0){
+            $element.removeClass("sticky");
         }
     });
 });
