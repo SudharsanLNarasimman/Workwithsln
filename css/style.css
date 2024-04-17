@@ -531,9 +531,10 @@ body{
     padding-top: 60px;
     padding-bottom: 60px;
     flex-direction: row;
-    background-color: #0AA352;
+    background-color: #ffffff;
 }
 .containerLR div{
     display: flex;
     flex-direction: column;
+    
 }
