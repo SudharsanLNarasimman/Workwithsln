@@ -25,7 +25,27 @@
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/click.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-
+	<script>
+		function isMobileOrTablet() {
+		  return /Mobi|Android|iPad|iPhone/i.test(navigator.userAgent) || window.innerWidth <= 800;
+		}
+	
+		if (isMobileOrTablet()) {
+		  document.addEventListener("DOMContentLoaded", function() {
+			document.body.innerHTML = `
+			  <div style="text-align: center; margin-top: 50px;">
+				<h1>Desktop Only</h1>
+				<p>Sorry, this website is only viewable on desktop browsers. Please visit us on a desktop device.</p>
+			  </div>
+			`;
+			document.body.style.display = "block";
+		  });
+		} else {
+		  document.addEventListener("DOMContentLoaded", function() {
+			document.body.style.display = "block";
+		  });
+		}
+	  </script>
 
 </head>
 <body>

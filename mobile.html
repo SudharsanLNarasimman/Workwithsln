@@ -13,6 +13,27 @@
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script>
+        function isMobileOrTablet() {
+          return /Mobi|Android|iPad|iPhone/i.test(navigator.userAgent) || window.innerWidth <= 800;
+        }
+    
+        if (isMobileOrTablet()) {
+          document.addEventListener("DOMContentLoaded", function() {
+            document.body.innerHTML = `
+              <div style="text-align: center; margin-top: 50px;">
+                <h1>Desktop Only</h1>
+                <p>Sorry, this website is only viewable on desktop browsers. Please visit us on a desktop device.</p>
+              </div>
+            `;
+            document.body.style.display = "block";
+          });
+        } else {
+          document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.display = "block";
+          });
+        }
+      </script>
 </head>
 <body>
     <div id="myElement">

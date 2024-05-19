@@ -15,24 +15,25 @@
     <script src="js/script.js"></script>
     <script>
         function isMobileOrTablet() {
-            const userAgent = /Mobi|Android|iPad|iPhone/i.test(navigator.userAgent);
-            const smallScreen = window.innerWidth <= 1024 && window.innerHeight <= 768;
-            const largeScreen = window.innerWidth > 1024 || window.innerHeight > 768;
-            return userAgent || (!largeScreen && smallScreen);
+          return /Mobi|Android|iPad|iPhone/i.test(navigator.userAgent) || window.innerWidth <= 800;
         }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            if (isMobileOrTablet()) {
-                document.body.innerHTML = `
-                    <div style="text-align: center; margin-top: 50px;">
-                        <h1>Desktop Only</h1>
-                        <p>Sorry, this website is only viewable on desktop browsers. Please visit us on a desktop device.</p>
-                    </div>
-                `;
-            }
+    
+        if (isMobileOrTablet()) {
+          document.addEventListener("DOMContentLoaded", function() {
+            document.body.innerHTML = `
+              <div style="text-align: center; margin-top: 50px;">
+                <h1>Desktop Only</h1>
+                <p>Sorry, this website is only viewable on desktop browsers. Please visit us on a desktop device.</p>
+              </div>
+            `;
             document.body.style.display = "block";
-        });
-    </script>
+          });
+        } else {
+          document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.display = "block";
+          });
+        }
+      </script>
 </head>
 <body>
     <div id="myElement">
