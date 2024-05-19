@@ -17,7 +17,8 @@
         function isMobileOrTablet() {
             const userAgent = /Mobi|Android|iPad|iPhone/i.test(navigator.userAgent);
             const smallScreen = window.innerWidth <= 1024 && window.innerHeight <= 768;
-            return userAgent || smallScreen;
+            const largeScreen = window.innerWidth > 1024 || window.innerHeight > 768;
+            return userAgent || (!largeScreen && smallScreen);
         }
 
         document.addEventListener("DOMContentLoaded", function() {
