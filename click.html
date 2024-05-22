@@ -21,10 +21,19 @@
 	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/slicknav.min.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
-
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/click.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+	<style>.menudiv {
+		display: flex;
+		flex-direction: row;
+		padding-left: 100px;
+		padding-top: 50px;
+		width: calc(100%)!important;
+		z-index: 100000;
+	}</style>
 	<script>
 		function isMobileOrTablet() {
 		  return /Mobi|Android|iPad|iPhone/i.test(navigator.userAgent) || window.innerWidth <= 800;
@@ -140,7 +149,7 @@
 			<div class="row portfolio-gallery m-0"> 
 				<div class="mix col-lg-4 col-sm-6 p-0 water">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/all/anaicut.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="all/anaicut.jpg"></div>
 						<h5>Kallanai Dam</h5>
                         <h6>Trichy</h6>
 						<p>2016</p>
@@ -148,7 +157,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 birds">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/cattleegret.jpeg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/cattleegret.jpeg"></div>
 						<h5>Bubulcus Lbis | Cattle Egret</h5>
                         <h6>Trichy</h6>
 						<p>May 2020</p>
@@ -156,7 +165,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 water">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/checkdam.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/checkdam.jpg"></div>
 						<h5>Check Dam - Srirangam</h5>
                         <h6>Trichy</h6>
 						<p>2021</p>
@@ -164,7 +173,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/ChitraLakshmanan.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/ChitraLakshmanan.jpg"></div>
 						<h5>Chitra Lakshmanan</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -172,7 +181,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 birds">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/crow.jpeg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/crow.jpeg"></div>
 						<h5>Corvus Corax | Common Raven</h5>
                         <h6>Srirangam</h6>
 						<p>May 2020</p>
@@ -180,7 +189,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 animals">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/Deer.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/Deer.jpg"></div>
 						<h5>Reindeer</h5>
                         <h6>Chennai</h6>
 						<p>March 2020</p>
@@ -188,7 +197,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/Dhanush.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/Dhanush.jpg"></div>
 						<h5>Dhanush</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -196,7 +205,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/Dhanush1.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/Dhanush1.jpg"></div>
 						<h5>Dhanush</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -204,7 +213,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/Dhanush2.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/Dhanush2.jpg"></div>
 						<h5>Dhanush</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -212,7 +221,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 birds">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/eagle.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/eagle.jpg"></div>
 						<h5>Milvus Migrans | Black Kite</h5>
                         <h6>Srirangam</h6>
 						<p>2016</p>
@@ -220,7 +229,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/ElangoKumaravel.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/ElangoKumaravel.jpg"></div>
 						<h5>Elango Kumaravel</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -228,7 +237,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/JP&KaaliVenkat.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/JP&KaaliVenkat.jpg"></div>
 						<h5>Jayaprakash & Kaali Venkat</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -236,7 +245,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 water">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/kovalam.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/kovalam.jpg"></div>
 						<h5>കോവളം ബീച്ച് | Kovalam Beach</h5>
                         <h6>Kovalam</h6>
 						<p>2022</p>
@@ -244,7 +253,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 water">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/kovalam1.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/kovalam1.jpg"></div>
 						<h5>കോവളം ബീച്ച് | Kovalam Beach</h5>
                         <h6>Kovalam</h6>
 						<p>2022</p>
@@ -252,7 +261,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 water general">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/kovalamwithsln.jpg.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/kovalamwithsln.jpg.jpg"></div>
 						<h5>Silhouette | Kovalam Beach</h5>
                         <h6>Kovalam</h6>
 						<p>2022</p>
@@ -260,7 +269,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 general">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/lightning.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/lightning.jpg"></div>
 						<h5>Lightning</h5>
                         <h6>Trichy</h6>
 						<p>June 2021</p>
@@ -268,7 +277,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/MariSelvaraj.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/MariSelvaraj.jpg"></div>
 						<h5>Mari Selvaraj</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -276,7 +285,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/NivedhithaaSathish.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/NivedhithaaSathish.jpg"></div>
 						<h5>Nivedhithaa Sathish</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -284,7 +293,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 general">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/oilnwater.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/oilnwater.jpg"></div>
 						<h5>Oil & Water - Macro Photography</h5>
                         <h6>Trichy</h6>
 						<p>April 2020</p>
@@ -292,7 +301,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 birds">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/parrot.jpeg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/parrot.jpeg"></div>
 						<h5>Rose-Ringed Parakeet | Kramer Parrot</h5>
                         <h6>Trichy</h6>
 						<p>May 2020</p>
@@ -300,7 +309,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 birds">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/pelican.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/pelican.jpg"></div>
 						<h5>Mycateria Leucocephala | Painted Stork</h5>
                         <h6>Chennai</h6>
 						<p>April 2020</p>
@@ -308,7 +317,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/PrakashGV.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/PrakashGV.jpg"></div>
 						<h5>GV Prakash</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -316,7 +325,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/PrakashGV1.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/PrakashGV1.jpg"></div>
 						<h5>GV Prakash</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -324,7 +333,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/PrakashGV2.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/PrakashGV2.jpg"></div>
 						<h5>GV Prakash</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -332,7 +341,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/PriyankaMohan.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/PriyankaMohan.jpg"></div>
 						<h5>Priyanka Mohan</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -340,14 +349,14 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/PriyankaMohan1.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/PriyankaMohan1.jpg"></div>
 						<h5>Priyanka Mohan</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
 					</div>
 				</div><div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/PriyankaMohan2.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/PriyankaMohan2.jpg"></div>
 						<h5>Priyanka Mohan</h5>
                         <h6>Chennai</h6>
 						<p>2024</p>
@@ -355,7 +364,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 temple">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/ranga.jpeg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/ranga.jpeg"></div>
 						<h5>திருமங்கை மன்னன் வேடுபறி</h5>
                         <h6>The Ranganathaswamy Temple | Srirangam</h6>
 						<p>January 2020</p>
@@ -363,7 +372,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 temple">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/ranga1.jpeg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/ranga1.jpeg"></div>
 						<h5>திருமங்கை மன்னன் வேடுபறி</h5>
                         <h6>The Ranganathaswamy Temple | Srirangam</h6>
 						<p>January 2020</p>
@@ -371,7 +380,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 general">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/shilloute.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/shilloute.jpg"></div>
 						<h5>Silhouette | Checkdam</h5>
                         <h6>Srirangam</h6>
 						<p>2023</p>
@@ -379,7 +388,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/ShivaRajkumar.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/ShivaRajkumar.jpg"></div>
 						<h5>Karunada Chakravarthy | Shiva Rajkumar</h5>
 						<h6>Chennai</h6>
 						<p>2024</p>
@@ -387,7 +396,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/ShivaRajkumar1.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/ShivaRajkumar1.jpg"></div>
 						<h5>Karunada Chakravarthy | Shiva Rajkumar</h5>
 						<h6>Chennai</h6>
 						<p>2024</p>
@@ -395,7 +404,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/ShivaRajkumar2.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/ShivaRajkumar2.jpg"></div>
 						<h5>Karunada Chakravarthy | Shiva Rajkumar</h5>
 						<h6>Chennai</h6>
 						<p>2024</p>
@@ -403,7 +412,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/ShivaRajkumar3.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/ShivaRajkumar3.jpg"></div>
 						<h5>Karunada Chakravarthy | Shiva Rajkumar</h5>
 						<h6>Chennai</h6>
 						<p>2024</p>
@@ -411,7 +420,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 general">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/spark.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/spark.jpg"></div>
 						<h5>Sparks</h5>
                         <h6>Trichy</h6>
 						<p>May 2021</p>
@@ -419,7 +428,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 buildings">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/srirangam.jpeg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/srirangam.jpeg"></div>
 						<h5>Rajagopuram | Srirangam</h5>
                         <h6>The Tallest Temple Tower Ever - 239.5 feet</h6>
 						<p>May 2020</p>
@@ -427,7 +436,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/SundeepKishan.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/SundeepKishan.jpg"></div>
 						<h5>Sundeep Kishan</h5>
 						<h6>Chennai</h6>
 						<p>2024</p>
@@ -435,7 +444,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/SundeepKishan1.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/SundeepKishan1.jpg"></div>
 						<h5>Sundeep Kishan</h5>
 						<h6>Chennai</h6>
 						<p>2024</p>
@@ -443,7 +452,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 general">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/symmetric.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/symmetric.jpg"></div>
 						<h5>Ceiling Symmetric | Railway Station</h5>
                         <h6>Chennai Egmore</h6>
 						<p>2016</p>
@@ -451,7 +460,7 @@
 				</div>
                 <div class="mix col-lg-4 col-sm-6 p-0 buildings">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/tanjavur.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/tanjavur.jpg"></div>
 						<h5>Thanjavur Maratha Palace</h5>
                         <h6>Thanjavur</h6>
 						<p>June 2023</p>
@@ -459,7 +468,7 @@
 				</div>
 				<div class="mix col-lg-4 col-sm-6 p-0 cinema">
 					<div class="portfolio-box">
-						<div class="portfolio-item set-bg" data-setbg="img/All/VinodKishan.jpg"></div>
+						<div class="portfolio-item set-bg" data-setbg="All/VinodKishan.jpg"></div>
 						<h5>Vinod Kishan</h5>
 						<h6>Chennai</h6>
 						<p>2024</p>
