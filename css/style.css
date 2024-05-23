@@ -26,6 +26,13 @@
     background-size: cover;
     background-position: center;
 }
+#sec11{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/bg5.jpg);
+    background-size: cover;
+    background-position: center;
+}
 body{
     margin: 0px;
 }
