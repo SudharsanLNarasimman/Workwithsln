@@ -653,3 +653,12 @@ body{
 .portfolio-item {
     height: 335px !important;
 }
+.portfolio-item-c img {
+    height: 335px;
+    width: 816px;
+    object-fit: cover; 
+    /* This will ensure the image covers the specified dimensions without distortion */
+}
+.portfolio-item-c {
+    height: 435px !important;
+}
